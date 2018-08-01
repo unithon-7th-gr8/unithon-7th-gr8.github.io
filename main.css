@@ -1,0 +1,414 @@
+
+/* Basic initialize CSS at browser */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body a {
+    text-decoration: none;
+}
+
+body a:hover{
+        text-decoration: none;
+        background: none;
+}
+body a:visited{
+    color: inherit;
+}
+/* Basic initialize CSS at browser End*/
+@font-face {
+	font-family: 'AppleSDGothicNeoR';
+	src: url('/Users/soonhojang/Documents/myProject/front-end/AppleSDGothicNeoL.woff') format('woff')
+  }
+  @font-face {
+	font-family: 'AppleSDGothicNeoM';
+	src: url('/Users/soonhojang/Documents/myProject/front-end/AppleSDGothicNeoM.woff') format('woff')
+  }
+  @font-face {
+	font-family: 'AppleSDGothicNeoL';
+	src: url('/Users/soonhojang/Documents/myProject/front-end/AppleSDGothicNeoR.woff') format('woff')
+  }
+
+
+@media screen and (max-width: 450px){
+
+	
+    .flex-row-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flex-row-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .flex-row-spacebetween{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .flex-row-spacearound{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .flex-column-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-row-center{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+	html, body{
+		height: 100%;
+	}
+	body{
+		display: flex;
+  		flex-direction: column;
+	}
+	.contents{
+		flex: 1 0 auto;
+	}
+	.sticky-container{
+		flex-shrink: 0;
+	}
+	
+	#title-name{
+		height: 40px;
+		background: #343434;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#title-img{
+		height:21px;
+	}
+	.link-container{
+		margin-right: 13px;
+		margin-left: 13px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+	}
+	
+	.link-container > input[type="text"]{
+		width: 261px;
+		border: 1px solid #333;
+		padding-left: 5px;
+		height: 24px;
+		box-sizing: border-box;
+		margin-bottom: 2px;
+	}
+	.link-container .link-btn{
+		width: 77px;
+		font-size: 9px;
+		align-items: center;
+		text-align: center;
+		background: #00d887;
+		color: #fff;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.members{
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.member-card, .price-container, .member-tags, .price-container{
+		display: flex;
+	}
+	.member-card{
+		width:100%;
+		align-items: stretch;
+		margin-bottom: 3px;
+		height: 55px;
+		align-items: center;
+	}
+	.member-card > img{
+		width: 42px;
+		height: 42px;
+		margin-right: 12px;
+		margin-left: 14px;
+	}
+	.member-info{
+		flex-grow: 7;
+		margin-bottom: 5px;
+		font-size:14px;
+	}
+	.member-tags{
+		margin-top: 2px;
+	}
+	.member-tags > a{
+		height: 12px;
+		width: 42px;
+		font-size: 9px;
+		text-align: center;
+		background: #ccc;
+		color: #fff;
+		border-radius: 20px;
+		padding-top: 3px;
+		margin-right: 3px;
+	}
+	.member-submit-btn{
+		flex-grow:1;
+		margin-right: 5px;
+		margin-bottom: 3px;
+	}
+	.cross-out-img{
+		width: 13px;
+		height: 10px;
+	}
+
+	.member-add-btn-container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 43px;
+		background: #f8f8f8;
+		margin-top: 8px;
+	}
+	.vertical-line{
+		height: 3px;
+		width:100vw;
+		background: #E6E6E6;
+	}
+	.price-cont-2, .price-cont-1-1, .prices{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.price-cont,.price-cont-1{
+		display: flex;
+		flex-direction: column;
+	}
+	.price-cont{
+		width:150px;
+		margin-left: 13px;
+	}
+	.prices{
+		margin-top: 13px;
+		margin-bottom: 23px;
+	}
+	.price-cont-1-1{
+		font-size:12px;
+		line-height: 16px;
+	}
+	.price-cont-2{
+		font-size:20px;
+		font-family: 'AppleSDGothicNeoM';
+		margin-top: 8px;
+	}
+	.price-cont-s{
+		font-size: 12px;
+		font-family: 'AppleSDGothicNeoL';
+		color: #333;
+		margin-right: 15px;
+		display:flex;
+		
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	.hor{
+		width: calc(100vw - 26px);
+		background: #ccc;
+		height: 1px;
+		margin: 0 auto;
+	}
+	.plus-circle{
+		font-size: 13px;
+		width: 14px;
+		height: 14px;
+		border-radius: 14px;
+		background: #aaa;
+		color: #fff;
+		margin: 0 auto;
+	}
+	.bill-contents{
+		text-align: center;
+		margin-top: 18px;
+		margin-bottom: 20px;
+	}
+	.bill-req{
+		font-size: 12px;
+		color: #aaa;
+		margin-top: 12px;
+	}
+	.complete-contents{
+		margin: 40px 13px 0 13px;
+	}
+	.check-count{
+		font-family: 'AppleSDGothicNeoL';
+		font-size: 11px;
+		color: #333;
+		margin-bottom: 8px;
+	}
+	.complete-btn{
+		margin-top: 5px;
+		background: #00d887;
+		font-size: 21px;
+		color: #fff;
+		height: 51px;
+		text-align:center;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.copyright{
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 7px;
+		color: #333;
+		letter-spacing: -0.5px;
+	}
+
+	.add-img-1{
+		width:12px;
+		height:12px;
+	}
+	.add-img-2{
+		width:8px;
+		height: 8px;
+	}
+
+
+
+
+	.open-modal:hover {background-color: #bff2e5}
+
+	.modal {
+		background-color: #fff;
+		display: none;
+		position: fixed;
+		margin-left: 36px;
+		top: 250px;
+		width: 308px;
+		height: 143px;
+		z-index: 10;
+		box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
+	}
+
+	.modal-text{
+		font-size: 14px;
+		margin-top: 19px;
+		line-height: 18px;
+	}
+	.modal-contents{
+		margin-left: 22px;
+		margin-right: 22px;
+	}
+	.modal-textarea > input{
+		width: 215px;
+		height: 25px;
+	}
+	.modal-textarea {
+		font-size: 14px;
+	}
+	.modal-textarea > a {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		margin-left: 3px;
+		background: #00d887;
+		color: #fff;
+	}
+	.modal-btn-group{
+		width: 153px;
+		height: 45px;
+		font-size: 14px;
+	}
+	.modal-btn-groups{
+		margin-top: 11px;
+	}
+	#toPage{
+		border-top: 1px solid #E6E6E6;
+		border-right: 1px solid #E6E6E6;
+	}
+	#closeModal{
+		border-top: 1px solid #E6E6E6;
+	}
+	#toPage a{
+		color: #00d887;
+	}
+	#closeModal a{
+		color: #333;
+	}
+	.member-tags>a.active{
+		background: #00d887;
+		color: #fff;
+	}
+	.hidden{
+		display:none;
+	}
+	.inputPrice{
+		width:80px;
+		height: 10px;
+		font-size: 8px;
+	}
+	.con-price{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+}
+
+

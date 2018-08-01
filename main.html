@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div id="title-name"><img id="title-img" src="/Users/soonhojang/Documents/myProject/front-end/logo.svg"></div>
+    </header>
+    <section class="contents">
+        <div class="link-container">
+            <input type="text" value="http://sansool.com/r3409C%ek%23%R%sd%32%KDdf23%13KE/" id="myInput">
+            <a class="link-btn" onclick="copyLink()">초대링크 복사</a>
+        </div>
+        <div class="members">
+            <div class="member-card">
+                <img src="/Users/soonhojang/Documents/myProject/front-end/icon1.svg" width="42px" height="42px">
+                <div class="member-info">
+                    <div class="member-name"><input type="text" placeholder="이름" class="inputName"></div>
+                    <div class="member-tags">
+                        <a class="member-tag">#안마심</a>
+                        <a class="member-tag">#안먹음</a>
+                        <a class="member-tag">#늦게옴</a>
+                        <a class="member-tag">#일찍감</a>
+                        <a class="member-tag">#면제</a>
+                    </div>
+                </div>
+                <div class="member-submit-btn"><img src="/Users/soonhojang/Documents/myProject/front-end/cross-out.svg" class="cross-out-img"></div>
+            </div>
+            <div class="member-card">
+                <img src="/Users/soonhojang/Documents/myProject/front-end/icon2.svg" width="42px" height="42px">
+                <div class="member-info">
+                    <div class="member-name"><input type="text" placeholder="이름" class="inputName"></div>
+                    <div class="member-tags">
+                        <a class="member-tag">#안마심</a>
+                        <a class="member-tag">#안먹음</a>
+                        <a class="member-tag">#늦게옴</a>
+                        <a class="member-tag">#일찍감</a>
+                        <a class="member-tag">#면제</a>
+                    </div>
+                </div>
+                <div class="member-submit-btn"><img src="/Users/soonhojang/Documents/myProject/front-end/cross-out.svg" class="cross-out-img"></div>
+            </div>
+            <div class="member-card">
+                    <img src="/Users/soonhojang/Documents/myProject/front-end/icon3.svg" width="42px" height="42px">
+                    <div class="member-info">
+                        <div class="member-name"><input type="text" placeholder="이름" class="inputName"></div>
+                        <div class="member-tags">
+                            <a class="member-tag">#안마심</a>
+                            <a class="member-tag">#안먹음</a>
+                            <a class="member-tag">#늦게옴</a>
+                            <a class="member-tag">#일찍감</a>
+                            <a class="member-tag">#면제</a>
+                        </div>
+                    </div>
+                    <div class="member-submit-btn"><img src="/Users/soonhojang/Documents/myProject/front-end/cross-out.svg" class="cross-out-img"></div>
+                </div>
+            <div class="member-add-btn-container"><img src="/Users/soonhojang/Documents/myProject/front-end/add.svg" class="add-img-1"></div>
+            <div class="vertical-line" style="margin-bottom:2px;"></div>
+            <div class="prices">
+                <div class="price-cont">
+                    <div class="price-cont-1">
+                        <div class="price-cont-1-1">
+                            <p>술 값</p>
+                            <div class="con-price">
+                                <div><input type="text" class="inputPrice"></div>원
+                            </div>
+                        </div>
+                        <div class="price-cont-1-1">
+                            <p>안주 값</p>
+                            <div class="con-price">
+                                <div><input type="text" class="inputPrice"></div>원
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-cont-2">
+                        <p>합계</p>
+                        <div class="con-price">
+                            <div><input type="text" class="inputPrice"></div>원
+                        </div>
+                    </div>
+                </div>
+                <div class="price-cont-s">
+                    <div><input id="check-box" type="checkbox" checked="checked">합계만 입력하기</div>
+                </div>
+            </div>
+            <div class="hor"></div>
+            <div class="bill-contents">
+                <div class="plus-circle flex-row-center"><img src="/Users/soonhojang/Documents/myProject/front-end/add-white.svg" class="add-img-2"></div>
+                <div class="bill-req">영수증을 첨부하세요</div>
+            
+            </div>
+            <div class="vertical-line"></div>
+        </div>
+        <div class="complete-contents">
+            <div class="check-count">모든 인원이 입력이 끝났나요?</div>
+            <a class="complete-btn show-modal open-modal">결제하러 가기</a>
+        </div>
+
+
+        <div class="modal">
+            <div class="modal-contents">
+                <div class="modal-text">결제를 위한 페이지가 생성됐습니다. 주소를<br>복사해 다른 인원에게 공유하세요.</div>
+                <div class="modal-textarea">
+                    <input type="text" value="http://sansool.com/4E%K02%e23%Km4%34%1M%12MM" id="myInput">
+                    <a class="link-btn" onclick="copyLink()">복사</a>
+                </div>
+            </div>
+            <div class="modal-btn-groups flex-row-center">
+                <div class="modal-btn-group flex-column-center" id="toPage"><a class="move-page" href="payment.html">페이지로 이동</a></div>
+                <div class="modal-btn-group flex-column-center" id="closeModal"><a class="close-modal" href="#">닫기</a></div>
+            </div>
+        </div>             
+    </section>
+    <footer class="sticky-container">
+        <div class="copyright">Copyright © gr8 Corp. All Rights Reserved.</div>
+    </footer>
+</body>
+</html>
+
