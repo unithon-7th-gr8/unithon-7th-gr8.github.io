@@ -62,15 +62,15 @@ body a:visited{
 /* Basic initialize CSS at browser End*/
 @font-face {
 	font-family: 'AppleSDGothicNeoR';
-	src: url('/Users/soonhojang/Documents/myProject/front-end/AppleSDGothicNeoL.woff') format('woff')
+	src: url('/fonts/AppleSDGothicNeoL.woff') format('woff')
   }
   @font-face {
 	font-family: 'AppleSDGothicNeoM';
-	src: url('/Users/soonhojang/Documents/myProject/front-end/AppleSDGothicNeoM.woff') format('woff')
+	src: url('/fonts/AppleSDGothicNeoM.woff') format('woff')
   }
   @font-face {
 	font-family: 'AppleSDGothicNeoL';
-	src: url('/Users/soonhojang/Documents/myProject/front-end/AppleSDGothicNeoR.woff') format('woff')
+	src: url('/fonts/AppleSDGothicNeoR.woff') format('woff')
   }
 
 
